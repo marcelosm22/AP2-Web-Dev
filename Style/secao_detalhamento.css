@@ -1,0 +1,133 @@
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #464242;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #393E46;
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#detalhes-atleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.atleta-detail {
+    width: 60%;
+    background-color: #F6F4F4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    border-radius: 20px;
+    display: block;
+    grid-template-columns: auto 1fr;
+    max-width: 50%;
+}
+
+.atleta-detail .atleta-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.atleta-detail img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 4px;
+}
+
+.atleta-detail .atleta-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.atleta-detail .atleta-infos p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.atleta-detail strong {
+    font-weight: bold;
+}
+
+.back-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#back-to-home-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 5px 5px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#back-to-home-button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #atleta-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .atleta-detail {
+        width: 90%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .atleta-detail .atleta-imagem {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .atleta-detail img {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .atleta-detail .atleta-infos {
+        text-align: center;
+        align-items: center;
+    }
+
+    .atleta-detail .atleta-infos p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .back-button-container {
+        margin-top: 20px;
+    }
+}

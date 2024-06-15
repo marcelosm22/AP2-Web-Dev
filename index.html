@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/index.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container-login">
+        <img src="images/botafogo.png" alt="brasão botafogo">
+        <h1>Trabalho AP2 Desenvolvimento Web</h1>
+        <h1>Atletas Botafogo 2024</h1>
+        <h2>Login</h2>
+        <form id="form-login">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha."required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="mensagem-erro" style="color: red;"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+    <script src="Script/login.js"></script>
+</body>
+</html>

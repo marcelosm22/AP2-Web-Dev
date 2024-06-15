@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="Style/home.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <button id="logout-button">Logout</button>
+        </div>
+        <div class="header-center">
+            <h1>Atletas Botafogo 2024 - AP2</h1>
+        </div>
+        <div class="header-right">
+             <p>Você está logado</p>
+        </div>
+    </header>
+    <main>
+        <div class="brasao">
+        <img src="images/botafogo.png" alt="brasão botafogo">
+        </div>
+        <div class="filter-container">
+            <select id="filter-select" class="filter-select">
+                <option value="all">Geral</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <div class="filter-buttons">
+                <button class="filter-button" data-endpoint="all">Geral</button>
+                <button class="filter-button" data-endpoint="masculino">Masculino</button>
+                <button class="filter-button" data-endpoint="feminino">Feminino</button>
+            </div>
+         </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar atletas">
+        </div>
+        <div id="todos-atletas" class="todos-atletas"></div>
+    </main>
+    <script src="Script/home.js"></script>
+</body>
+</html>
